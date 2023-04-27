@@ -6,7 +6,7 @@ const servicesRouter = require("./services")
 router.use("/", servicesRouter)
 
 // Parties router
-const partyRouter = require("./services")
+const partyRouter = require("./parties")
 
 router.use("/", partyRouter)
 
