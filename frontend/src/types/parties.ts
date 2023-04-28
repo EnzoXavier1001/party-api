@@ -14,5 +14,5 @@ export interface Parties {
     },
     title: string,
     updatedAt: string,
-    id: string
+    _id: string
 }

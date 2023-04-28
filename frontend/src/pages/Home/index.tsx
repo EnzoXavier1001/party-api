@@ -3,6 +3,7 @@ import api from "../../services/api"
 import { Parties } from '../../types/parties'
 import { Card } from '../../components/Card'
 import * as C from './styles'
+import { Header } from '../../components/Header'
 
 export const Home = () => {
   const [parties, setParties] = useState<Parties[]>([])
@@ -21,10 +22,20 @@ export const Home = () => {
   }, [])
 
   return (
-    <C.Container>
-      {parties.map((item, index) => (
-        <Card item={item} key={index}/>
-      ))}
-    </C.Container>
+    <>
+      <Header />
+      <C.Home>
+        <C.Title>Suas festas</C.Title>
+        <C.WrapperCard>
+          {parties.map((item, index) => (
+            <Card 
+              item={item} 
+              key={index}
+            />
+          ))}
+        </C.WrapperCard>
+      </C.Home>
+    </>
+    
   )
 }
