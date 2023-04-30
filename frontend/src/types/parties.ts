@@ -4,15 +4,18 @@ export interface Parties {
     createdAt: string,
     description: string,
     image: string,
-    services: {
-        name: string,
-        description: string,
-        price: number,
-        image: string,
-        updatedAt: string,
-        id: string
-    },
+    services: [Services],
     title: string,
     updatedAt: string,
     _id: string
 }
+
+export interface Services {
+    name: string,
+    description: string,
+    price: number,
+    image: string,
+    updatedAt: string,
+    id: string
+}
+            

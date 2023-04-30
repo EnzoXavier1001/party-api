@@ -17,3 +17,12 @@ export const Title = styled.h2`
 export const Subtitle = styled.h3`
     margin: 1.8rem 0 2rem;
 `
+
+export const CardContainer = styled.div`
+    display: flex;
+    max-width: 112rem;
+    justify-content: center;
+    gap: 1.8rem;
+    margin: 0 auto;
+`
+
