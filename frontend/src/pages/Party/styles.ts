@@ -26,3 +26,8 @@ export const CardContainer = styled.div`
     margin: 0 auto;
 `
 
+export const WrapperButtons = styled.div`
+    display: flex;
+    gap: 1.6rem;
+    margin-bottom: 1.8rem;
+`
