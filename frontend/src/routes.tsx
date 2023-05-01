@@ -4,6 +4,7 @@ import {
 
 import { Home } from './pages/Home'
 import { Party } from "./pages/Party";
+import { PartyNew } from "./pages/NewParty";
 
 export const router = createBrowserRouter([
     {
@@ -14,4 +15,8 @@ export const router = createBrowserRouter([
       path: "/party/:id",
       element: <Party />,
     },
+    {
+      path: "/party/new",
+      element: <PartyNew />,
+    }
 ]);

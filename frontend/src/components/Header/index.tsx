@@ -8,7 +8,7 @@ export const Header = () => {
             <h1>Party Time!</h1>
             <C.NavbarList>
                 <Link to="/">Minhas Festas</Link>
-                <Link to="my-parties">Criar Festa</Link>
+                <Link to="/party/new">Criar Festa</Link>
             </C.NavbarList>
         </C.Navbar>
     </C.Header>
